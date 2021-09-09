@@ -138,13 +138,21 @@ main div.super-center{
     transform: translate(-50%,-50%);
     float: none;
 }
-main .section-image{
+main .section-image-default{
     width: 50%;
-    float: left;
+    /*float: left;*/
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
 }
-main .section-text{
+main .section-text-default{
     width: 25%;
-    float: right;
+    /*float: right;*/
+    position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 main .section-text h2{
     font-size: 50px;
@@ -160,4 +168,20 @@ main .section-text p{
 
 main section.dark-section{
     background-color: var(--soft-gray);
+}
+main .section-text-alternative{
+    width: 25%;
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .section-image-alternative{
+    width: 50%;
+    float: right;
+    /*position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(0,40px);*/
 }
