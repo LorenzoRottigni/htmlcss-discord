@@ -17,6 +17,9 @@
 .col-1_6{
     width: calc(100%/6);
 }
+.col-1_6{
+    width: calc(100%/6);
+}
 .col-2_6{
     width: calc(100%/6*2);
 }
@@ -33,6 +36,12 @@
     content: "";
     display: table;
     clear: both;
+}
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: var(--black);
 }
 header div.heading-image{
     height: 100vh;
@@ -124,8 +133,8 @@ div.heading-middle-container p{
 
 
 main section{
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 70vh;
     background-color: var(--white);
     border-bottom: solid white;
     /*padding: 0 calc(100%/6);*/
@@ -140,41 +149,31 @@ main div.super-center{
 }
 main .section-image-default{
     width: 50%;
-    /*float: left;*/
-    position: absolute;
-    left:0;
-    top: 50%;
-    transform: translateY(-50%);
+    float: left;
+}
+main .section-image-default img{
+    width: 100%
 }
 main .section-text-default{
-    width: 25%;
-    /*float: right;*/
-    position: absolute;
-    right:0;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 30%;
+    float: right;
+    padding-top: 35px;
 }
-main .section-text h2{
-    font-size: 50px;
-    margin-left: 2%;
-    margin-top: 5%;
-}
-main .section-text p{
-    font-size: 20px;
-    margin-top: 5%;
-    margin-left: 2%;
-    line-height: 25 px;
+main p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 25px;
 }
 
 main section.dark-section{
     background-color: var(--soft-gray);
+    padding: 50px calc(100%/6);
 }
 main .section-text-alternative{
     width: 25%;
-    position: absolute;
-    left:0;
-    top: 50%;
-    transform: translateY(-50%);
+    float: left;
+    padding-top: 40px;
 }
 main .section-image-alternative{
     width: 50%;
@@ -184,4 +183,89 @@ main .section-image-alternative{
     top: 50%;
     transform: translateY(-50%);
     transform: translateX(0,40px);*/
+}
+main .section-image-alternative img{
+    width: 100%
+}
+
+main div.last-section{
+    text-align: center;
+}
+h2.stars{
+    background-image: url('../images/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 50px;
+    text-align: center;
+    background-position-x: center;
+    background-position-y: center;
+}
+main div.last-section button{
+    background-color: var(--light-purple-violet);
+    color: var(--white);
+    border-radius: 30px;
+    border: none;
+    font-weight: 550;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 15px 25px;
+}
+main div.last-section button:hover{
+    background: transparent;
+    color: var(--light-purple-violet);
+}
+
+footer{
+    height: 60vh;
+    width: 100%;
+    background-color: var(--black);
+    padding: 0 calc(100%/8);
+}
+footer div.col-5_6 div{
+    display: inline-block;
+}
+div.footer-social-div{
+    width: calc(100%/6*1.7);
+    float: left;
+}
+div.footer-social-div h2{
+    color: var(--dark-purple-violet);
+    margin-left: 0;
+    margin-top: 100px;
+}
+div.footer-social-div div.lang{
+    font-size: 20px;
+    color: white;
+    height: 26px;
+    display: block;
+    padding: 30px 0;
+}
+div.footer-social-div div.lang img{
+    height: 26px;
+    vertical-align: middle;
+}
+div.footer-social-div div.lang span{
+    line-height: 26px;
+    vertical-align: middle;
+}
+div.social-icons{
+    font-size: 30px;
+}
+div.social-icons i{
+    padding-right: 30px;
+    color: white
+}
+footer ul{
+    list-style: none;
+    color: white;
+    margin-top: 100px;
+    overflow: auto;
+}
+footer ul li{
+    padding: 10px 0;
+    font-size: 2vh;
+}
+.purple{
+    color:var(--dark-purple-violet);
+    font-weight: bold
 }
